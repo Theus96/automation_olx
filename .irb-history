@@ -1,0 +1,46 @@
+query("* marked:'row_ad_price'", :text)[1]
+query("* marked:'row_ad_price'", :text)[2]
+query("* marked:'row_ad_price'", :text)[3]
+query("* marked:'row_ad_title'", :text)[0]
+query("* marked:'row_ad_title'", :text)[1]
+query("* marked:'row_ad_title'", :text)[2]
+query("* marked:'row_ad_title'", :text)[3]
+query("* marked:'row_ad_title'", :text)[4]
+query("* marked:'row_ad_region'", :text)[3]
+query("* marked:'row_ad_region'", :text)[2]
+query("* marked:'row_ad_region'", :text)[1]
+query("* marked:'row_ad_region'", :text)[1]
+start_test_server_in_background
+exit
+start_test_server_in_background
+enter_text "* marked:'search_src_text'", "Gol G6"
+press_enter_button
+query "*"
+query "* marked:'pro_badge'"
+flash "* marked:'pro_badge'"
+flash "* marked:'row_ad_thumbnail'"
+touch "* marked:'action_search'"
+load 'mobile.rb'
+write_search "teste"
+test = Mobile.new
+test.write_search "tetse"
+load 'mobile.rb'
+load 'mobile.rb'
+load 'mobile.rb'
+load 'mobile.rb'
+load 'mobile.rb'
+load 'mobile.rb'
+load 'mobile.rb'
+test = PageTest.new
+test = PageTest.new
+tester = mobile.new
+tester = PageTest.new
+exit
+start_test_server_in_background
+touch "* marked:'Escolher estado'"
+start_test_server_in_background
+exit
+start_test_server_in_background
+touch "* marked:'Escolher estado'"
+start_test_server_in_background
+exit
