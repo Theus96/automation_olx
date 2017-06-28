@@ -1,14 +1,14 @@
 require 'calabash-android/calabash_steps'
 
-Dado(/^que abriu o app$/) do
+
+Given(/^some open app$/) do
 @page =	page(PageTest).await(timeout: 5)
 end
 
-E(/^faça busca$/) do
-	#@page.inicializar_app
-  @page.write_search("Gol")  
+And(/^I input "(.*?)" in search$/) do |arg1|
+  @page.write_search(arg1)  
 end
 
-Então(/^mostre$/) do
+Then(/^show searchs in Terminal$/) do
   @page.show_post
 end
